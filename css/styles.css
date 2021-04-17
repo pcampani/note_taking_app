@@ -1,0 +1,132 @@
+*,*::before,*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+	header {
+		padding: 1em;
+		background-color: #FCF9A5;
+		color: #000;
+	}
+	header img {
+		width: 30px;
+		margin: 0 .5em 0 0;
+	}
+	header h2, header img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.add {
+		padding: 2em;
+		width: 300px;
+	}
+		.add, .notes {
+			display: inline-block;
+			vertical-align: top;
+		}
+		.add {
+			background-color: #F8F7B7;
+			height: 100vh;
+		}
+		.add input[type=submit] {
+			margin-bottom: 1em;
+			width: 200px;
+			padding: .5em;
+			background-color: black;
+			border: none;
+			color: #fff;
+			border-radius: 5px;
+			cursor: pointer;
+			box-shadow: 2px 2px 3px black;
+		}
+		.add input[type=text] {
+			width: 200px;
+			padding: .5em;
+			border: none;
+		}
+		.add label {
+			font-size: 14px;
+			margin-top: 1em;
+		}
+		.add textarea {
+			width: 200px;
+			border: none;
+			padding: 1em;
+		}
+		.add textarea:focus {
+			outline: none;
+		}
+		.notes {
+			margin: 2em;
+			width: 900px;
+		}
+		label,input {
+			display: block;
+		}
+		textarea {
+			height: 150px;
+		}
+		
+		.note {
+			display: inline-block;
+			vertical-align: top;
+			width: 200px;
+			margin: 1em 1em 0 0;
+		}
+		
+		.note form {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+		}
+			.note .title {
+				position: relative;
+				background-color: #F8F7B7;
+				padding: .5em;
+				font-size: 14px;
+			}
+			.note input[type=text] {
+				background: transparent;
+				border: none;
+				font-size: 14px;
+				color:darkslategray;
+			}
+			.note .body {
+				background-color: #FCF9A5;
+			}
+			.note .body textarea {
+				width: 100%;
+				padding: .5em;
+				background-color: transparent;
+				border: none;
+				resize: none;
+			}
+			.note .body textarea:focus {
+				outline: none;
+			}
+				.note input[type=text]:focus {
+					outline: none;
+				}
+				.error {
+					color: tomato;
+					font-size: 12px;
+				}
+				.note.box {
+					position: relative;
+				}
+					.delete {
+						display: inline-block;
+						position: absolute;
+						top: 5px;
+						left: 170px;
+					}
+					.delete input {
+						cursor: pointer;
+						transition: transform .2s ease;
+					}
+					.delete input:hover {
+						transform: scale(1.05);
+					}
